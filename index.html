@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>アバターセレクター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg_pattern Paper_v2">
+        <h1>こいよりアバターセレクター</h1>
+        <p>お好みのパーツを選んでダウンロードボタンを押すと<br>アバター画像（pngファイル）をダウンロードできます。</p>
+        <!-- 選択プルダウン -->
+        <div id="controls">
+            <label>アバター : 
+                <select id="characterSelect">
+                    <option value="A">跡部景吾</option>
+                    <option value="B">日吉若</option>
+                </select>
+            </label><br>
+            <label>髪色 : <select id="hairColor"></select></label><br>
+            <label>服装 : <select id="outfit"></select></label>
+        </div>
+        <!-- プレビュー -->
+        <canvas id="avatarCanvas" width="96" height="128"></canvas>
+        <!-- ダウンロードボタン -->
+        <button id="downloadBtn">ダウンロード</button>
+        <!-- フッター -->
+        <footer>
+            <p>お問い合わせはこちらまで<br>
+                <a href="https://twitter.com/koiatohiyori" target="_blank">X（Twitter）: @koiatohiyoti</a>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
